@@ -1,0 +1,167 @@
+/* Importe o Bootstrap CSS */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+/* Importe FontAwesome */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Variáveis para personalização do tema */
+:root {
+    --primary-color: #3490dc;
+    --secondary-color: #6c757d;
+    --success-color: #38c172;
+    --info-color: #6cb2eb;
+    --warning-color: #ffed4a;
+    --danger-color: #e3342f;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+/* Personalização global */
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2779bd;
+    border-color: #2779bd;
+}
+
+/* Personalização para cards */
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #f8fafc;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Personalização para tabelas */
+.table thead th {
+    font-weight: 600;
+    border-top: none;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Personalização para notificações */
+.notification-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--danger-color);
+}
+
+/* Status badges */
+.badge-status {
+    padding: 0.35em 0.65em;
+    border-radius: 10rem;
+}
+
+/* Personalização para o módulo de autenticação */
+.auth-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo-container img {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.password-strength-container {
+    margin-top: 0.5rem;
+}
+
+.password-strength-meter-container {
+    height: 6px;
+    margin-top: 5px;
+}
+
+/* Gerenciamento de usuários */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+/* Estilos para role badges */
+.role-badge {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Personalização do footer */
+footer {
+    margin-top: auto;
+}
+
+/* Estilos para o modo de autenticação de dois fatores */
+.two-factor-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.two-factor-qr {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.setup-key {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+    word-break: break-all;
+}
+
+/* Toast container para notificações */
+#toast-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 9999;
+}
+
+/* Responsividade */
+@media (max-width: 767.98px) {
+    .card-header {
+        padding: 0.75rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .table-responsive {
+        border: none;
+    }
+}

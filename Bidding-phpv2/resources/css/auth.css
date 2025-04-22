@@ -1,0 +1,149 @@
+/* Estilos específicos para páginas de autenticação */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f8fafc;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.auth-card-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.auth-card-body {
+    padding: 2rem;
+}
+
+.auth-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-logo img {
+    height: 60px;
+}
+
+.auth-form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.auth-input {
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.auth-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(52, 144, 220, 0.25);
+}
+
+.auth-button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.auth-button:hover {
+    background-color: #2779bd;
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: #6c757d;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #e2e8f0;
+}
+
+.auth-divider span {
+    padding: 0 1rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}
+
+.password-reset-link {
+    text-align: right;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Estilos para o modo de verificação de e-mail */
+.email-verification-card {
+    text-align: center;
+}
+
+.verification-icon {
+    font-size: 3rem;
+    color: var(--warning-color);
+    margin-bottom: 1rem;
+}
+
+.verification-message {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para o modo de recuperação de senha */
+.password-reset-icon {
+    font-size: 3rem;
+    color: var(--info-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .auth-card {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .auth-card-body {
+        padding: 1.5rem;
+    }
+}
